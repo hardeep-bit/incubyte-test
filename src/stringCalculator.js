@@ -27,8 +27,6 @@ const add = (numbers) => {
 
   const total = numArrayNumbers.reduce((sum, num) => sum + num, 0);
 
-  console.log(numbers, ' result ', total);
-  
   return total
 };
 
