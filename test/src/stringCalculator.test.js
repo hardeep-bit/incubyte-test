@@ -21,4 +21,8 @@ describe('String Calculator', () => {
     expect(add("4,5,6,7")).toBe(22);
   });
 
+  test('should handle newlines as delimiters', () => {
+    expect(add("1\n2,3")).toBe(6);
+    expect(add("4\n5\n6")).toBe(15);
+  });
 });
